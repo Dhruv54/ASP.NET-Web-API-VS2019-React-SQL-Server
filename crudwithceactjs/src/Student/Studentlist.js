@@ -40,7 +40,8 @@ export default class Studentlist extends Component {
               <th colSpan="4">Action</th>
             </tr>
           </thead>
-          <tbody>{this.tabRow()}</tbody>
+          {/* <tbody>{this.tabRow()}</tbody> */}
+          <tbody><Table></Table></tbody>
         </table>
       </div>
     );

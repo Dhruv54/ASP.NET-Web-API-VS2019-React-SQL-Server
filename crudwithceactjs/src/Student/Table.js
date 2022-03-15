@@ -1,10 +1,11 @@
 import React, { Component } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
+
 class Table extends Component {
-  // constructor(props) {
-  //   super(props);
-  // }
+  constructor(props) {
+    super(props);
+  }
 
   DeleteStudent = () => {
     axios
@@ -21,7 +22,7 @@ class Table extends Component {
   render() {
     return (
       <tr>
-        <td>{this.props.obj.Name}</td>
+        {/* <td>{this.props.obj.Name}</td>
         <td>{this.props.obj.RollNo}</td>
         <td>{this.props.obj.Class}</td>
         <td>{this.props.obj.Address}</td>
@@ -31,11 +32,21 @@ class Table extends Component {
           </Link>
         </td>
         <td>
-          <button
-            type="button"
-            onClick={this.DeleteStudent}
-            className="btn btn-danger"
-          >
+          <button type="button" onClick={this.DeleteStudent} className="btn btn-danger" >
+            Delete
+          </button>
+        </td> */}
+        <td>Dhruv</td>
+        <td>10</td>
+        <td>A</td>
+        <td>India</td>
+        <td>
+          <Link className="btn btn-success">
+            Edit
+          </Link>
+        </td>
+        <td>
+          <button type="button" className="btn btn-danger" >
             Delete
           </button>
         </td>
@@ -45,3 +56,4 @@ class Table extends Component {
 }
 
 export default Table;
+

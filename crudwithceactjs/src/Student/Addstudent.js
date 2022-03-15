@@ -1,16 +1,8 @@
 import React from "react";
 import axios from "axios";
 import "./Addstudent.css";
-import {
-  Container,
-  Col,
-  Form,
-  // Row,
-  FormGroup,
-  Label,
-  Input,
-  Button,
-} from "reactstrap";
+import { Container, Col, Form, FormGroup, Label, Input, Button} from "reactstrap";
+
 class Addstudent extends React.Component {
   constructor(props) {
     super(props);

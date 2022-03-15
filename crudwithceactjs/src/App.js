@@ -5,10 +5,13 @@ import EditStudent from "./Student/Editstudent";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import "./App.css";
 import { Switch } from "react-router-dom";
+
+import AdminDashBoard from "./Components/AdminDashBoard";
+
 function App() {
   return (
     <Router>
-      <div className="container">
+      {/* <div className="container">
         <nav className="navbar navbar-expand-lg navheader">
           <div className="collapse navbar-collapse">
             <ul className="navbar-nav mr-auto">
@@ -25,13 +28,14 @@ function App() {
             </ul>
           </div>
         </nav>{" "}
-        <br />
+        <br /> */}
         <Switch>
           <Route exact path="/Addstudent" component={Addstudent} />
           <Route path="/edit/:id" component={EditStudent} />
           <Route path="/Studentlist" component={Studentlist} />
+          <Route path="/AdminDashBoard" component={AdminDashBoard} />
         </Switch>
-      </div>
+      {/* </div> */}
     </Router>
   );
 }
